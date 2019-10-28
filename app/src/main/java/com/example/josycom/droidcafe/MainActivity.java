@@ -61,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 displayToast(getString(R.string.action_favorites_message));
                 return true;
             case R.id.action_contact:
-                displayToast(getString(R.string.action_favorites_message));
+                displayToast(getString(R.string.action_contact_message));
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this, SettingsActivity.class));
             default:
         }
         return super.onOptionsItemSelected(item);
